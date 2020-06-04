@@ -7,10 +7,10 @@ metadata:
     nginx.ingress.kubernates.io/use-regex: 'true'
 spec:
   rules:
-    - host: stubhub.dev
+    - host: stubhub.com
       http:
         paths:
-          - path: /api/users/?(.*)
+          - path: /
             backend:
               serviceName: auth-srv
               servicePort: 3000
