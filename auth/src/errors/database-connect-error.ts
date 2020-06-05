@@ -4,9 +4,6 @@ export class DatabaseConnectionError extends Error {
 
 	constructor() {
 		super();
-
-		// Only beause we are extending a build is class
-		Object.setPrototypeOf(this, DatabaseConnectionError.prototype);
 	}
 
 	serializeErrors() {
